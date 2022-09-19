@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(7, 20, 44);
+    color: bisque;
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 5px;
+
+    width: 250px;
+}
+
+#start {
+    width: 150px;
+    height: 30px;
+
+    margin-bottom: 20px;
+
+    border: none;
+}
+
+#start:hover {
+    filter: brightness(50%);
+    /* color: white; */
+
+    cursor: pointer;
+}
+
+#output {
+    height: 16px;
+    margin: 10px;
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Config for Lightmode */
+
+.light-bg {
+    background-color: antiquewhite;
+}
+
+.light-txt {
+    color: darkblue;
+}
+
+.light-btn {
+    background-color: aquamarine;
+    color: darkblue;
+}

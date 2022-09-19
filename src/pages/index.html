@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../js/generateRandom.js" defer></script>
+    <!-- <script src="../js/configuration.js" defer></script> -->
+    <title>Base html</title>
+</head>
+<body class="bg">
+    <!-- <h1 class="txt">Random Number Gen</h1> -->
+    
+    <p id="output" class="txt">Password here</p>
+    <button id="start" class="btn">Generate!</button>
+
+    <label class="txt">
+        <p>Size:</p>
+        <input type="number" name="size" id="size" max="18" min="1" value="8">
+    </label>
+
+    <label class="txt">
+        <p>Numbers?</p>
+        <input type="checkbox" name="number" id="number" checked>
+    </label>
+
+    <label class="txt">
+        <p>Special characters?</p>
+        <input type="checkbox" name="character" id="character">
+    </label>
+
+    <label class="txt">
+        <p>Letters?</p>
+        <input type="checkbox" name="letter" id="letter">
+    </label>
+
+    <label class="txt">
+        <p>Uppercase?</p>
+        <input type="checkbox" name="caps" id="caps">
+    </label>
+
+</body>
+</html>
