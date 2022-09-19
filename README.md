@@ -10,8 +10,9 @@ Hope you enjoy it!
 
 Steps:
 
-After cloning it, start npm with "npm install"
-then use npm run build to build the app in your platform!
+1. After cloning it, start npm with "npm install"
+2. then use npm run build to build the app in your platform!
+3. The outcome should be at your downloads folder.
 
 Attention!
 
