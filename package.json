@@ -77,7 +77,7 @@
   "devDependencies": {},
   "scripts": {
     "start": "electron .",
-    "build": "npx electron-packager . --icon ./src/assets/padlock.icns"
+    "build": "npx electron-packager . --icon ./src/assets/padlock.icns --out=packages && mv packages ~/Downloads"
   },
   "repository": {
     "type": "git",
