@@ -2,7 +2,7 @@ const { app, BrowserWindow, Tray } = require('electron')
 
 const { resolve } = require('path')
 
-iconPath = resolve(__dirname, './','src', 'assets', 'lock.png')
+iconPath = resolve(__dirname, './','src', 'assets', 'padlock_tray.png')
 
 const createWindow = () => {
 
