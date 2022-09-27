@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
     <script src="../js/generateRandom.js" defer></script>
+    <script src="../js/renderer.js" defer></script>
     <title>Password generation</title>
 </head>
 <body class="bg">
@@ -52,6 +54,7 @@
             <div class="toggle__fill"></div>
         </label>
     </div>
+    <button type="button" id="weird">Weird theme</button>
 
 </body>
 </html>
