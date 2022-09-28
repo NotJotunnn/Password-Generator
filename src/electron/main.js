@@ -34,7 +34,7 @@ const createWindow = () => {
     // ipcMain.send('responseAPI', response)
   })
   
-  win.webContents.openDevTools();
+  // win.webContents.openDevTools();
   
   win.loadFile(join(__dirname ,'../pages/index.html'))
   
