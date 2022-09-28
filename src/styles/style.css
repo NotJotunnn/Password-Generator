@@ -1,4 +1,4 @@
-* {
+*, *::after, *::before {
     margin: 0;
     padding: 0;
 
@@ -45,6 +45,7 @@ label {
     width: 150px;
     height: 30px;
 
+    margin-top: 20px;
     margin-bottom: 20px;
 
     border: none;
@@ -58,10 +59,20 @@ label {
 }
 
 #output {
-    height: 16px;
+    width: 100%;
+    height: 25px;
     margin: 10px;
 
     font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+
+    background-color: rgb(7, 20, 44);
+    color: antiquewhite;
+
+    border: none;
+    outline: none;
+
+    text-align: center;
 }
 
 /* Config for Lightmode */
@@ -129,4 +140,36 @@ label {
     left: var(--height);
 
     transition: left ease-in-out .2s;
+}
+
+.strength-meter {
+    --strength: 0;
+    position: relative;
+
+    height: 1.5rem;
+    width: 90%;
+
+    border: 3px solid antiquewhite;
+    border-radius: 1rem;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+}
+
+.strength-meter::before {
+
+    content: '';
+
+    position: absolute;
+
+    left: 0;
+
+    height: 100%;
+
+    width: calc(1% * var(--strength, 0));
+
+    background-color: rgba(250, 235, 215, 0.432);
+
+    transition: width 200ms;
 }

@@ -1,16 +1,20 @@
 const { app, BrowserWindow, Tray, ipcMain } = require('electron');
 
+const Store = require('electron-store');
+
 const { resolve, join } = require('path');
 
 const Theme = require('./storage');
+
+const store = new Store();
 
 iconPath = resolve(__dirname, '../', 'assets', 'padlock_tray.png')
 
 const createWindow = () => {
   
   const win = new BrowserWindow({
-    width: 340,
-    height: 270,
+    width: 410,
+    height: 290,
     show: false,
     frame: false,
     resizable: false,
@@ -20,8 +24,14 @@ const createWindow = () => {
     },
   })
 
+
+  // TO-DO: Discover how to actually pass data
   ipcMain.on('HelloAPI', () => {
-    console.log(Theme.getTheme);
+    console.log('hey')
+
+    // let darkmode = store.set('darkmode', 'dark');
+    // const response = darkmode.JSON.stringfy
+    // ipcMain.send('responseAPI', response)
   })
   
   win.webContents.openDevTools();

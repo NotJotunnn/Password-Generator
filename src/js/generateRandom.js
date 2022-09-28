@@ -21,7 +21,7 @@ start.addEventListener("click", function() {
     
     const password = setPassword(lettersIncluded, numbersIncluded, uppercaseIncluded, symbolsIncluded, maxSize);
 
-    output.textContent = password
+    output.value = password
     }
 )
 
@@ -47,13 +47,13 @@ function setPassword(letterIncluded, numbersIncluded, uppercaseIncluded, symbols
     }
     
     if (uppercaseIncluded) {
-        const uppercase = setLowtoHigh(65, 90);
+        const uppercase = setLowtoHigh(65, 91);
         array = array.concat(uppercase)
         count += 1
     }
     
     if (symbolsIncluded) {
-        const symbols = setLowtoHigh(33, 47).concat(setLowtoHigh(58, 64)).concat(setLowtoHigh(91, 96)).concat(setLowtoHigh(123, 126));
+        const symbols = setLowtoHigh(33, 47).concat(setLowtoHigh(58, 65)).concat(setLowtoHigh(91, 96)).concat(setLowtoHigh(123, 126)).concat(setLowtoHigh(128, 131)).concat(setLowtoHigh(132, 133)).concat(setLowtoHigh(161, 172)).concat(setLowtoHigh(174, 253));
         array = array.concat(symbols)
         count += 1
     }
@@ -61,8 +61,8 @@ function setPassword(letterIncluded, numbersIncluded, uppercaseIncluded, symbols
     if (count > 0) {
         let arraySize = array.length;
 
-        if (maxSize > 18) {
-            maxSize = 18;
+        if (maxSize > 32) {
+            maxSize = 32;
         }
 
         makePassword = ''
