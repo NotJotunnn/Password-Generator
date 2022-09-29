@@ -22,6 +22,8 @@ start.addEventListener("click", function() {
     const password = setPassword(lettersIncluded, numbersIncluded, uppercaseIncluded, symbolsIncluded, maxSize);
 
     output.value = password
+
+    navigator.clipboard.writeText(output.value);
     }
 )
 
