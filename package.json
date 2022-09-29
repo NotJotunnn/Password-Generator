@@ -1,5 +1,5 @@
 {
-  "name": "passwordgenerator",
+  "name": "The Password Generator",
   "version": "1.0.0",
   "description": "",
   "main": "./src/electron/main.js",
